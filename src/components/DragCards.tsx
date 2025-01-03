@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 
-export const DragCards = () => {
+export default function DragCards() {
   return (
     <section className="relative grid min-h-screen w-full place-content-center overflow-hidden bg-purple-100">
       <h2 className="relative z-0 text-[20vw] font-black text-neutral-800 md:text-[200px]">
@@ -11,7 +11,7 @@ export const DragCards = () => {
       <Cards />
     </section>
   );
-};
+}
 
 const Cards = () => {
   const containerRef = useRef(null);

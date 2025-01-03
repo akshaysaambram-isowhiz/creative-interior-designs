@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Star, TrendingUp } from "lucide-react";
 
-export const Hero = () => {
+export default function Hero() {
   return (
     <div className="relative flex min-h-screen items-center" id="home">
       <div className="absolute inset-0 z-0">
@@ -101,4 +101,4 @@ export const Hero = () => {
       </div>
     </div>
   );
-};
+}

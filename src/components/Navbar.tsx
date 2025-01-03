@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Menu, X, Sofa } from "lucide-react";
 
-export const Navbar = () => {
+export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
 
@@ -44,11 +44,17 @@ export const Navbar = () => {
               <NavLink href="#home" isScrolled={isScrolled}>
                 Home
               </NavLink>
+              <NavLink href="#about" isScrolled={isScrolled}>
+                About
+              </NavLink>
               <NavLink href="#services" isScrolled={isScrolled}>
                 Services
               </NavLink>
               <NavLink href="#portfolio" isScrolled={isScrolled}>
                 Portfolio
+              </NavLink>
+              <NavLink href="#team" isScrolled={isScrolled}>
+                Team
               </NavLink>
               <NavLink href="#contact" isScrolled={isScrolled}>
                 Contact
@@ -80,11 +86,17 @@ export const Navbar = () => {
             <MobileNavLink href="#home" isScrolled={isScrolled}>
               Home
             </MobileNavLink>
+            <MobileNavLink href="#about" isScrolled={isScrolled}>
+              About
+            </MobileNavLink>
             <MobileNavLink href="#services" isScrolled={isScrolled}>
               Services
             </MobileNavLink>
             <MobileNavLink href="#portfolio" isScrolled={isScrolled}>
               Portfolio
+            </MobileNavLink>
+            <MobileNavLink href="#team" isScrolled={isScrolled}>
+              Team
             </MobileNavLink>
             <MobileNavLink href="#contact" isScrolled={isScrolled}>
               Contact
@@ -94,7 +106,7 @@ export const Navbar = () => {
       )}
     </nav>
   );
-};
+}
 
 const NavLink = ({
   href,

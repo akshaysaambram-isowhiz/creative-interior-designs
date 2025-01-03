@@ -55,7 +55,7 @@ const projects = [
 
 const categories = ["All", "Residential", "Commercial"];
 
-export const Portfolio = () => {
+export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredProjects = projects.filter((project) =>
@@ -138,4 +138,4 @@ export const Portfolio = () => {
       </div>
     </section>
   );
-};
+}

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ServiceCard } from "./ServiceCard";
 import { services } from "./serviceData";
 
-export const Services = () => {
+export default function Services() {
   return (
     <section className="bg-purple-100 py-20" id="services">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -40,4 +40,4 @@ export const Services = () => {
       </div>
     </section>
   );
-};
+}

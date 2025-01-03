@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { Stats } from "./Stats";
 
-export const About = () => {
+export default function About() {
   return (
-    <section className="py-20 bg-white" id="about">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="bg-white py-20" id="about">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -23,8 +23,8 @@ export const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-purple-600 font-medium">About Us</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <span className="font-medium text-purple-600">About Us</span>
+            <h2 className="mb-6 text-3xl font-bold text-gray-900 md:text-4xl">
               Transforming Spaces into
               <span className="text-purple-600">
                 {" "}
@@ -32,7 +32,7 @@ export const About = () => {
               </span>{" "}
               ✨
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="mb-8 text-gray-600">
               Born in 2020, Creative Interior Designs has revolutionized the
               interior design game in Hyderabad. We're not just designers; we're
               creators of viral-worthy spaces that tell your unique story.
@@ -44,4 +44,4 @@ export const About = () => {
       </div>
     </section>
   );
-};
+}

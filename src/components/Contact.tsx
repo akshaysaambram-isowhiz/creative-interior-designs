@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 import HoverCard from "./HoverCard";
 
-export const Contact = () => {
+export default function Contact() {
   return (
     <section className="bg-purple-100 py-20" id="contact">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -75,4 +75,4 @@ export const Contact = () => {
       </div>
     </section>
   );
-};
+}
