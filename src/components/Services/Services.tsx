@@ -4,7 +4,7 @@ import { services } from "./serviceData";
 
 export const Services = () => {
   return (
-    <section className="bg-gray-50 py-20" id="services">
+    <section className="bg-purple-100 py-20" id="services">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
