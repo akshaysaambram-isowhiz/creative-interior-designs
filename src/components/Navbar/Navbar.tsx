@@ -1,11 +1,11 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, Sofa } from "lucide-react";
 import { NavLink } from "./NavLink";
 import { MobileMenu } from "./MobileMenu";
 import { navLinks } from "./navData";
 
-export const Navbar = () => {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("#home");
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,33 +37,32 @@ export const Navbar = () => {
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/90 backdrop-blur-sm shadow-sm" : "bg-transparent"
+      className={`fixed z-50 w-full transition-all duration-300 ${
+        isScrolled ? "bg-white/90 shadow-sm backdrop-blur-sm" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             className="flex items-center space-x-2"
           >
-            <Sofa
-              className={`h-8 w-8 ${isScrolled ? "text-purple-600" : "text-black"}`}
-            />
+            <Sofa className="h-8 w-8 text-purple-600" />
             <span
-              className={`hidden md:block font-bold text-xl ${isScrolled ? "text-gray-900" : "text-black"}`}
+              className={`hidden text-xl font-bold md:block ${isScrolled ? "text-black" : "text-white"}`}
             >
               Creative Interior Designs
             </span>
           </motion.div>
 
-          <nav className="hidden md:flex items-center space-x-1">
+          <nav className="hidden items-center space-x-1 md:flex">
             {navLinks.map((link) => (
               <NavLink
                 key={link.href}
                 href={link.href}
                 isActive={activeSection === link.href}
+                scrolled={isScrolled}
               >
                 {link.label}
               </NavLink>
@@ -72,7 +71,7 @@ export const Navbar = () => {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`md:hidden p-2 rounded-md transition-colors ${
+            className={`rounded-md p-2 transition-colors md:hidden ${
               isScrolled
                 ? "text-gray-700 hover:text-purple-600"
                 : "text-black hover:text-purple-200"
@@ -86,4 +85,4 @@ export const Navbar = () => {
       <MobileMenu isOpen={isOpen} activeSection={activeSection} />
     </header>
   );
-};
+}
