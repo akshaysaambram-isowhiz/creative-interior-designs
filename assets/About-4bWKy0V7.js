@@ -1,0 +1,16 @@
+import{j as e}from"./index-1J1I3Od-.js";import{m as s}from"./proxy-BZkuhnoW.js";import{c as t}from"./createLucideIcon-rNxElUA6.js";import{C as l}from"./clock-1nbA5QFo.js";/**
+ * @license lucide-react v0.344.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const c=t("Award",[["circle",{cx:"12",cy:"8",r:"6",key:"1vp47v"}],["path",{d:"M15.477 12.89 17 22l-5-3-5 3 1.523-9.11",key:"em7aur"}]]);/**
+ * @license lucide-react v0.344.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const n=t("ThumbsUp",[["path",{d:"M7 10v12",key:"1qc93n"}],["path",{d:"M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z",key:"y3tblf"}]]);/**
+ * @license lucide-react v0.344.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const o=t("Users",[["path",{d:"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2",key:"1yyitq"}],["circle",{cx:"9",cy:"7",r:"4",key:"nufk8"}],["path",{d:"M22 21v-2a4 4 0 0 0-3-3.87",key:"kshegd"}],["path",{d:"M16 3.13a4 4 0 0 1 0 7.75",key:"1da9ce"}]]),d=[{icon:o,value:"2000+",label:"Happy Clients"},{icon:c,value:"150+",label:"Awards Won"},{icon:l,value:"10+",label:"Years Experience"},{icon:n,value:"98%",label:"Success Rate"}],p=()=>e.jsx("div",{className:"grid grid-cols-2 gap-6",children:d.map((a,i)=>{const r=a.icon;return e.jsxs(s.div,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{delay:i*.1},className:"flex items-center space-x-3",children:[e.jsx("div",{className:"p-3 bg-purple-100 rounded-lg",children:e.jsx(r,{className:"w-6 h-6 text-purple-600"})}),e.jsxs("div",{children:[e.jsx("div",{className:"text-2xl font-bold text-gray-900",children:a.value}),e.jsx("div",{className:"text-sm text-gray-600",children:a.label})]})]},i)})});function y(){return e.jsx("section",{className:"bg-white py-20",id:"about",children:e.jsx("div",{className:"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8",children:e.jsxs("div",{className:"grid grid-cols-1 items-center gap-12 lg:grid-cols-2",children:[e.jsx(s.div,{initial:{opacity:0,x:-20},whileInView:{opacity:1,x:0},viewport:{once:!0},children:e.jsx("img",{src:"https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&q=80",alt:"Interior Design Team",className:"rounded-2xl shadow-2xl"})}),e.jsxs(s.div,{initial:{opacity:0,x:20},whileInView:{opacity:1,x:0},viewport:{once:!0},children:[e.jsx("span",{className:"font-medium text-purple-600",children:"About Us"}),e.jsxs("h2",{className:"mb-6 text-3xl font-bold text-gray-900 md:text-4xl",children:["Transforming Spaces into",e.jsxs("span",{className:"text-purple-600",children:[" ","Social Media Sensations"]})," ","✨"]}),e.jsx("p",{className:"mb-8 text-gray-600",children:"Born in 2020, Creative Interior Designs has revolutionized the interior design game in Hyderabad. We're not just designers; we're creators of viral-worthy spaces that tell your unique story."}),e.jsx(p,{})]})]})})})}export{y as default};
